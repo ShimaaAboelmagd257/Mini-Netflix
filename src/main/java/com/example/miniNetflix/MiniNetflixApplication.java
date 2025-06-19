@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MiniNetflexApplication {
+public class MiniNetflixApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MiniNetflexApplication.class, args);
+		SpringApplication.run(MiniNetflixApplication.class, args);
 	}
 
 }

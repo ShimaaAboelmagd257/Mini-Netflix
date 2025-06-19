@@ -1,0 +1,19 @@
+#version: '3.8'
+services:
+  dp:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    restart : always
+    environment:
+     POSTGRES_DB: mininetflix
+     POSTGRES_USER: postgres
+     POSTGRES_PASSWORD: 55555
+
+  adminer:
+    image: adminer:latest
+    restart: always
+    ports:
+      - 8888:8080
+
+

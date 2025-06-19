@@ -1,0 +1,17 @@
+--CREATE TABLE users (
+--    id BIGSERIAL  PRIMARY KEY
+--);
+--
+--CREATE TABLE movies (
+--    id BIGSERIAL  PRIMARY KEY,
+--    title VARCHAR(255)
+--);
+--
+--CREATE TABLE ratings (
+--    user_id BIGINT,
+--    movie_id BIGINT,
+--    rating DOUBLE PRECISION,
+--    PRIMARY KEY (user_id, movie_id),
+--    FOREIGN KEY (user_id) REFERENCES users(id),
+--    FOREIGN KEY (movie_id) REFERENCES movies(id)
+--);
