@@ -1,5 +1,6 @@
 package com.example.miniNetflix.domain.dto;
 
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,11 +12,13 @@ import java.time.LocalDate;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class TmdbMovieDto {
-    private String poster_path;
-    private String overview;
-    private String release_date;
-    private String id;
+public class MovieDto {
+    @Id
+    private Long movieId;
     private String title;
-    private Double vote_average;
+    private String genres;
+    private String tmdbId;         // from TMDb
+    private String overview;
+    private String posterUrl;
+    private LocalDate releaseDate;
 }

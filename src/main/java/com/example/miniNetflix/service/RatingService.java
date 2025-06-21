@@ -1,4 +1,11 @@
 package com.example.miniNetflix.service;
 
-public class RatingService {
+import com.example.miniNetflix.domain.dto.RatingDto;
+
+import java.util.List;
+
+public interface RatingService {
+    RatingDto saveRating(RatingDto ratingDto);
+
+    List<RatingDto> getRatingsByUser(Long userId);
 }

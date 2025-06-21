@@ -12,14 +12,14 @@ import java.util.Optional;
 
 
 @Service
-public class TmdbClient {
+public class TMDbClient {
 
     @Value("${tmdb.api.token}")
     private String apiKey;
     private final RestTemplate restTemplate;
     private final String Base_Url = "https://api.themoviedb.org/3/search/movie";
 
-    public TmdbClient(RestTemplate restTemplate) {
+    public TMDbClient(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
     public Optional<TmdbMovieDto> searchMovieByTitle(String title){
