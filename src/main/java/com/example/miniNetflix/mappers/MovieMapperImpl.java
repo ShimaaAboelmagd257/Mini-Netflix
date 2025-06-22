@@ -15,12 +15,12 @@ public class MovieMapperImpl implements Mapper<MovieEntity,MovieDto>{
     }
 
     @Override
-    public MovieDto mapTo(MovieEntity movieEntity) {
+    public MovieDto toDto(MovieEntity movieEntity) {
         return mapper.map(movieEntity,MovieDto.class);
     }
 
     @Override
-    public MovieEntity mapFrom(MovieDto movieDto) {
+    public MovieEntity fromDto(MovieDto movieDto) {
         return mapper.map(movieDto,MovieEntity.class);
     }
 

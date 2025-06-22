@@ -18,7 +18,9 @@ public class SimilarityMatrixBuilder {
         }
 
 
+
         Map<Long,Map<Long,Double>> similarityMatrix = new HashMap<>();
+        //O(n²) matrix — huge for thousands of movies. //"java.lang.OutOfMemoryError: Java heap space
         for (Long movie1: movieUserRatings.keySet()){
             for(Long movie2 : movieUserRatings.keySet()){
                 if(!movie1.equals(movie2)){

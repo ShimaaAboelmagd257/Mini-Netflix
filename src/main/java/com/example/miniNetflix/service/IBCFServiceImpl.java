@@ -73,7 +73,7 @@ public class IBCFServiceImpl implements IBCFService{
                         .findById(entry.getKey()))
                 .filter(Optional::isPresent)
                 .map(Optional::get)
-                .map(mapper::mapTo)
+                .map(mapper::toDto)
                 .collect(Collectors.toList());
     }
 }

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class RatingDto {
-    private long id;
-
+    private long userId;
+    private long movieId;
     private double rating;
 }

@@ -15,6 +15,7 @@ public class MovieController {
 
     private final MovieService movieService;
 
+
     @GetMapping
     public ResponseEntity<List<MovieDto>> getAllMovies(@RequestParam(required = false) String genre){
         return ResponseEntity.ok(movieService.getAllMovie(genre));
